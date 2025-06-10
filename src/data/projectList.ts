@@ -1,6 +1,6 @@
 import { Project } from "@/interfaces/project";
 
-export const porjectList: Project[] = [
+export const projectList: Project[] = [
   {
     client: "Sura Chile",
     description:
@@ -69,7 +69,7 @@ export const porjectList: Project[] = [
   {
     client: "Innocv",
     description:
-      "mpresa especializada en la gestión integral de artistas y proyectos musicales , ofreciendo servicios de asesoría legal, fiscal, gestión de derechos y estrategias de marketing digital. Su enfoque está centrado en ayudar a profesionales del sector musical a desarrollar su carrera con un soporte administrativo y creativo completo.",
+      "Empresa especializada en la gestión integral de artistas y proyectos musicales , ofreciendo servicios de asesoría legal, fiscal, gestión de derechos y estrategias de marketing digital. Su enfoque está centrado en ayudar a profesionales del sector musical a desarrollar su carrera con un soporte administrativo y creativo completo.",
     developmentCompany: "Mindshore | España",
     id: "mindshore-innocv-1",
     imageUrl: "/projects/gestmusic.png",
@@ -78,6 +78,60 @@ export const porjectList: Project[] = [
     technologies: "React",
     tools: "Git, Jira",
     webSite: "https://www.gestmusic.es",
+  },
+  {
+    client: "Rivadavia",
+    description:
+      "Migración al sistema core Ítaca, una solución modular y escalable para gestionar todo el ciclo del negocio de seguros —desde la cotización hasta la liquidación—, mejorando la eficiencia operativa y reduciendo errores, con una arquitectura flexible adaptable a distintos productos y regulaciones.",
+    developmentCompany: "Hublance | España",
+    id: "hublance-itaca-1",
+    imageUrl: "/projects/itaca.png",
+    industry: "Seguros",
+    projectName: "Itaca",
+    technologies: "Angular",
+    tools: "Git, Bitbucket, Jira",
+    webSite:
+      "https://www.ust.com/es/who-we-are/ust-newsroom/seguros-rivadavia-confia-en-ust-la-implantacion-del-core-de-seguros-itaca",
+  },
+  {
+    client: "N5 now",
+    description:
+      "Plataforma de Business Intelligence enfocada en ayudar a entidades financieras con insights, dashboards y decisiones en tiempo real.",
+    developmentCompany: "N5 now | Argentina",
+    id: "n5now-deuia-1",
+    imageUrl: "/projects/decision-engine-ui-analytics.png",
+    industry: "Bancario",
+    projectName: "Decision engine UI analytics",
+    technologies: "React",
+    tools: "Git, Bitbucket, Jira",
+    webSite: "https://n5now.com/platform",
+  },
+  {
+    client: "Medicarte",
+    description:
+      "Proyecto enfocado en la actualización tecnológica de una plataforma existente, migrando el código base desde Angular 7 a Angular 10. La migración se ejecutó de forma exitosa garantizando la estabilidad del sistema y permitiendo la integración de nuevas funcionalidades. Posteriormente, se incorporó soporte para dispositivos externos como lectores de huellas digitales, así como el desarrollo de nuevos módulos funcionales conforme a los requerimientos del negocio.",
+    developmentCompany: "Personal soft | Colombia",
+    id: "personal-soft-atencion-domiciliaria-1",
+    imageUrl: "/projects/atencion-domiciliaria.png",
+    industry: "Salud",
+    projectName: "Atención domiciliaria",
+    technologies: "Angular",
+    tools: "Git, Bitbucket, Jira",
+    webSite: "https://medicarte.com.co/domicilios",
+  },
+  {
+    client: "Suramericana | Colombia",
+    description:
+      "Herramienta que permiten calcular el precio de un seguro, ajustando los detalles del producto a la situación particular de quien lo solicita de una forma rapida y sencilla.",
+    developmentCompany: "Personal soft | Colombia",
+    id: "personal-soft-cotizadores-1",
+    imageUrl: "/projects/cotizadores.png",
+    industry: "Seguros",
+    projectName: "Cotizadores",
+    technologies: "Angular",
+    tools: "Git, Bitbucket, Jira",
+    webSite:
+      "https://login.sura.com/sso/servicelogin.aspx?continueTo=https%3A%2F%2Fcotizadores.sura.com&service=cotizador",
   },
   {
     client: "Bancolombia",
