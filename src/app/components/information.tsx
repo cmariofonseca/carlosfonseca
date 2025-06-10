@@ -1,13 +1,17 @@
+import Image from "next/image";
+
 export default function Information() {
   return (
     <div className="w-full">
       {/* Imagen de perfil circular */}
       <div className="w-full flex justify-center">
         <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-6">
-          <img
-            src="images/image_profile.jpg"
+          <Image
             alt="Foto de perfil"
             className="w-full h-full object-cover"
+            src="/images/image_profile.jpg"
+            width={40}
+            height={40}
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { CircleMinus } from "lucide-react";
 
 import { Project } from "@/interfaces/project";
@@ -22,11 +23,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 backdrop-blur-sm">
       <div className="relative w-11/12 max-w-3xl rounded-lg bg-gray-800 shadow-2xl border border-gray-700 overflow-hidden animate-fadeIn">
         {/* Imagen */}
-        <div className="w-full h-64 md:h-96 flex justify-center items-center overflow-hidden bg-gray-900">
-          <img
+        <div className="w-full h-64 flex justify-center items-center overflow-hidden bg-gray-900">
+          <Image
             src={project.imageUrl}
             alt={project.projectName}
             className="max-h-full max-w-full object-contain"
+            width={700}
+            height={380}
           />
         </div>
 
