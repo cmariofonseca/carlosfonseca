@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { CirclePlus } from "lucide-react";
 
 import ProjectModal from "./projectModal";
@@ -14,10 +15,12 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
     <>
       <div className="w-96 rounded-lg shadow-sm bg-gray-800 border border-gray-700 overflow-hidden">
         <div className="w-96 flex justify-center items-center overflow-hidden">
-          <img
+          <Image
             src={project.imageUrl}
             alt={project.projectName}
             className="h-[207px] w-auto object-contain"
+            width={384}
+            height={207}
           />
         </div>
 
