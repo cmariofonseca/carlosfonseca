@@ -48,6 +48,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             <span className="font-semibold text-white">Compañía:</span> {project.developmentCompany}
           </div>
           <div className="text-gray-400">
+            <span className="font-semibold text-white">Año de desarrollo:</span> {project.date}
+          </div>
+          <div className="text-gray-400">
             <span className="font-semibold text-white">Tecnología:</span> {project.technologies}
           </div>
           <div className="text-gray-400">
