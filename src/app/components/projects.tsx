@@ -8,23 +8,27 @@ import ProjectSkeleton from "./projectSkeleton";
 
 import { projectList } from "@/data/projectList";
 import { Project } from "@/interfaces/project";
+import { COMPANIES, FILTER_OPTIONS, ICONS, YEARS } from "@/constants/projects";
 
 export default function Projects() {
-  const [activeIcon, setActiveIcon] = useState<string | null>(null);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projectList);
+  const [activeIcon, setActiveIcon] = useState<string | null>(null);
+  const [activeCompany, setActiveCompany] = useState<string | null>(null);
+  const [activeYear, setActiveYear] = useState<string | null>(null);
+  const [filterType, setFilterType] = useState("tecnologías");
   const [loading, setLoading] = useState<boolean>(false);
 
-  const icons = [
-    { name: "Angular", src: "/icons/angular.svg" },
-    { name: "React", src: "/icons/react.svg" },
-    { name: "Next", src: "/icons/next.svg" },
-    { name: "Vue", src: "/icons/vue.svg" },
-    { name: "Ionic", src: "/icons/ionic.svg" },
-    { name: "Node", src: "/icons/node.svg" },
-    { name: "Nest", src: "/icons/nest.svg" },
-  ];
+  const handleClick = (filterType: string, name: string) => {
+    setLoading(true);
 
-  const handleIconClickTimeout = (name: string) => {
+    setTimeout(() => {
+      if (filterType === "tecnologías") handleDisplayByTechnologies(name);
+      if (filterType === "empresas") handleDisplayByCompanies(name);
+      if (filterType === "fecha de desarrollo") handleDisplayByDevelopmentDate(name);
+    }, 300);
+  };
+
+  const handleDisplayByTechnologies = (name: string) => {
     setActiveIcon((prev) => {
       if (prev === name) {
         setFilteredProjects(projectList);
@@ -42,42 +46,111 @@ export default function Projects() {
     });
   };
 
-  const handleIconClick = (name: string) => {
-    setLoading(true);
+  const handleDisplayByCompanies = (company: string) => {
+    setActiveCompany((prev) => {
+      if (prev === company) {
+        setFilteredProjects(projectList);
+        setLoading(false);
+        return null;
+      }
 
-    setTimeout(() => {
-      handleIconClickTimeout(name);
-    }, 300);
+      const filtered = projectList.filter((project) =>
+        project.developmentCompany.toLowerCase().includes(company.toLowerCase())
+      );
+
+      setFilteredProjects(filtered);
+      setLoading(false);
+      return company;
+    });
   };
 
-  const getIconClass = (name: string) => {
-    const isActive = activeIcon === null || activeIcon === name;
+  const handleDisplayByDevelopmentDate = (date: string) => {
+    setActiveYear((prev) => {
+      if (prev === date) {
+        setFilteredProjects(projectList);
+        setLoading(false);
+        return null;
+      }
+
+      const filtered = projectList.filter((project) => project.date === date);
+
+      setFilteredProjects(filtered);
+      setLoading(false);
+      return date;
+    });
+  };
+
+  const getButtonClass = (isActive: boolean) => {
     return `
-      mx-2 
+      text-gray-400
       cursor-pointer 
+      mx-1
       transition-transform 
       duration-200 
-      hover:scale-110 
+      hover:scale-120 
       ${!isActive ? "grayscale opacity-50" : ""}
     `;
   };
 
+  const handleChangeFilterType = () => {
+    setFilteredProjects(projectList);
+    setActiveIcon(null);
+    setActiveCompany(null);
+    setActiveYear(null);
+
+    const currentIndex = FILTER_OPTIONS.indexOf(filterType);
+    const nextIndex = (currentIndex + 1) % FILTER_OPTIONS.length;
+    setFilterType(FILTER_OPTIONS[nextIndex]);
+  };
+
   return (
     <div className="w-full">
+      <p className="text-2xl mt-16">Experiencia laboral</p>
+
       {/* Skills */}
-      <div className="w-full flex justify-center mt-12 flex-wrap gap-4">
-        {icons.map((icon) => (
-          <Image
-            alt={icon.name}
-            className={getIconClass(icon.name)}
-            height={40}
-            key={icon.name}
-            onClick={() => handleIconClick(icon.name)}
-            src={icon.src}
-            title={icon.name}
-            width={40}
-          />
-        ))}
+      <button className="text-gray-400 cursor-pointer mt-8" onClick={handleChangeFilterType}>
+        Filtrar por: <b>{filterType}</b>
+      </button>
+
+      <div className="flex justify-center flex-wrap gap-4 mt-6">
+        {(() => {
+          if (filterType === "tecnologías") {
+            return ICONS.map((icon) => (
+              <Image
+                alt={icon.name}
+                className={getButtonClass(activeIcon === null || activeIcon === icon.name)}
+                height={24}
+                key={icon.name}
+                onClick={() => handleClick(filterType, icon.name)}
+                src={icon.src}
+                title={icon.name}
+                width={24}
+              />
+            ));
+          }
+          if (filterType === "empresas") {
+            return COMPANIES.map((company) => (
+              <button
+                className={getButtonClass(activeCompany === null || activeCompany === company)}
+                key={company}
+                onClick={() => handleClick(filterType, company)}
+              >
+                {company}
+              </button>
+            ));
+          }
+          if (filterType === "fecha de desarrollo") {
+            return YEARS.map((year) => (
+              <button
+                className={getButtonClass(activeYear === null || activeYear === year)}
+                key={year}
+                onClick={() => handleClick(filterType, year)}
+              >
+                {year}
+              </button>
+            ));
+          }
+        })()}
       </div>
 
       {/* Proyectos */}
