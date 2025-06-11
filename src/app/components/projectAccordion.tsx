@@ -13,7 +13,7 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
 
   return (
     <>
-      <div className="w-96 rounded-lg shadow-sm bg-gray-800 border border-gray-700 overflow-hidden">
+      <div className="w-96 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <div className="w-96 flex justify-center items-center overflow-hidden">
           <Image
             src={project.imageUrl}
@@ -25,7 +25,7 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
         </div>
 
         <div className="flex justify-between px-5 py-3 items-center">
-          <span className="font-semibold text-white">{project.projectName}</span>
+          <span className="font-semibold text-gray-400">{project.projectName}</span>
           <button
             aria-label="Abrir modal"
             className=" text-gray-400 hover:text-white transition"
