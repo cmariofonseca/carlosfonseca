@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CloudDownload } from "lucide-react";
 
 export default function Information() {
   return (
@@ -62,8 +63,8 @@ export default function Information() {
         </a>
 
         <a href="/cv" rel="noopener noreferrer" target="_blank" title="CV">
-          <button className="text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
-            Descargar CV
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+            <CloudDownload className="mr-2" /> Descargar CV
           </button>
         </a>
       </div>

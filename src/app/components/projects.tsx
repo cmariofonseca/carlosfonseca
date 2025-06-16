@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { ListRestart } from "lucide-react";
 
 import ProjectAccordion from "./projectAccordion";
 import ProjectSkeleton from "./projectSkeleton";
@@ -108,12 +109,12 @@ export default function Projects() {
       <p className="text-2xl mt-16">Experiencia laboral</p>
 
       {/* Skills */}
-      <div className="w-full justify-center">
+      <div className="w-full flex justify-center">
         <button
-          className="text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer mt-8"
+          className="flex items-center text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer mt-8"
           onClick={handleChangeFilterType}
         >
-          Filtrar por: <b>{filterType}</b>
+          <ListRestart className="mr-2" /> Filtrar por: <b className="ml-2">{filterType}</b>
         </button>
       </div>
 
