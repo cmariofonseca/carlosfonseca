@@ -15,48 +15,55 @@ export default function Information() {
       </div>
 
       {/* Nombre */}
-      <h1 className="text-3xl text-[#f7df1e] font-bold">Carlos Fonseca</h1>
+      <h1 className="text-4xl text-[#f7df1e] font-bold">Carlos Fonseca</h1>
 
       {/* Descripción */}
       <p className="text-lg text-gray-400 max-w-md mt-2">
-        Especialista en frontend con habilidades complementarias en backend.
+        Desarrollador web especializado en frontend, con experiencia en backend y aplicaciones
+        móviles.
       </p>
 
       {/* Iconos de redes y botón de CV */}
-      <div className="flex items-center gap-4 mt-4">
+      <div className="flex items-center gap-4 mt-8">
         <a
           href="https://github.com/cmariofonseca"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
           title="GitHub"
         >
-          <Image
-            alt="GitHub"
-            className="cursor-pointer"
-            src="/icons/github.svg"
-            width={24}
-            height={24}
-          />
+          <button className="flex items-center text-sm text-gray-300 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+            <Image
+              alt="GitHub"
+              className="cursor-pointer mr-2"
+              src="/icons/github.svg"
+              width={24}
+              height={24}
+            />
+            GitHub
+          </button>
         </a>
 
         <a
           href="https://www.linkedin.com/in/carlosfonsecadev/"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
           title="LinkedIn"
         >
-          <Image
-            alt="LinkedIn"
-            className="cursor-pointer"
-            src="/icons/linkedin.svg"
-            width={24}
-            height={24}
-          />
+          <button className="flex items-center text-sm text-gray-300 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+            <Image
+              alt="LinkedIn"
+              className="cursor-pointer mr-2"
+              src="/icons/linkedin.svg"
+              width={24}
+              height={24}
+            />
+            LinkedIn
+          </button>
         </a>
 
-        <a href="/cv" target="_blank" rel="noopener noreferrer">
+        <a href="/cv" rel="noopener noreferrer" target="_blank" title="CV">
           <button className="text-sm text-gray-300 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
-            CV
+            Descargar CV
           </button>
         </a>
       </div>
