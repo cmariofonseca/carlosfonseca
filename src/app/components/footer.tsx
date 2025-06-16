@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-gray-900 text-gray-400 py-4 px-6">
-      <div className="text-right text-sm">Portfolio actualizado el {currentDate}</div>
+      <div className="text-right text-sm">Portafolio actualizado el {currentDate}</div>
     </footer>
   );
 }

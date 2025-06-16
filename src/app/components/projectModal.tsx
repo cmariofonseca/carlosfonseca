@@ -30,6 +30,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             className="max-h-full max-w-full object-contain"
             width={700}
             height={380}
+            priority // Mejora la carga de la imagen en modales
           />
         </div>
 
@@ -38,9 +39,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="text-gray-400">
             <span className="font-semibold text-white">Nombre:</span> {project.projectName}
           </div>
-          <div className="text-gray-400">
-            <span className="font-semibold text-white">Cliente:</span> {project.client}
-          </div>
+          {project.client && (
+            <div className="text-gray-400">
+              <span className="font-semibold text-white">Cliente:</span> {project.client}
+            </div>
+          )}
           <div className="text-gray-400">
             <span className="font-semibold text-white">Industria:</span> {project.industry}
           </div>
