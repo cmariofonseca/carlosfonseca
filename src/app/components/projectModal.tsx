@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { CircleMinus } from "lucide-react";
+import { X } from "lucide-react";
 
 import { Project } from "@/interfaces/project";
 
@@ -62,27 +62,28 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="text-gray-400">
             <span className="font-semibold text-white">Descripción:</span> {project.description}
           </div>
-          <div className="text-gray-400">
-            <span className="font-semibold text-white">Sitio web:</span>{" "}
-            <a
-              href={project.webSite}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer text-blue-400"
+          <div className="w-full flex justify-between">
+            <div>
+              <span className="font-semibold text-white">Sitio web:</span>{" "}
+              <a
+                href={project.webSite}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer text-blue-400"
+              >
+                {project.webSite}
+              </a>
+            </div>
+            {/* Botón cerrar */}
+            <button
+              aria-label="Cerrar modal"
+              className=" text-gray-400 hover:text-white transition cursor-pointer"
+              onClick={onClose}
             >
-              {project.webSite}
-            </a>
+              <X size={28} />
+            </button>
           </div>
         </div>
-
-        {/* Botón cerrar */}
-        <button
-          aria-label="Cerrar modal"
-          className="absolute top-4 right-4 text-gray-400 hover:text-white transition"
-          onClick={onClose}
-        >
-          <CircleMinus size={28} />
-        </button>
       </div>
     </div>
   );
