@@ -31,7 +31,7 @@ export default function Information() {
           target="_blank"
           title="GitHub"
         >
-          <button className="flex items-center text-sm text-gray-300 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
             <Image
               alt="GitHub"
               className="cursor-pointer mr-2"
@@ -49,7 +49,7 @@ export default function Information() {
           target="_blank"
           title="LinkedIn"
         >
-          <button className="flex items-center text-sm text-gray-300 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
             <Image
               alt="LinkedIn"
               className="cursor-pointer mr-2"
@@ -62,7 +62,7 @@ export default function Information() {
         </a>
 
         <a href="/cv" rel="noopener noreferrer" target="_blank" title="CV">
-          <button className="text-sm text-gray-300 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+          <button className="text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
             Descargar CV
           </button>
         </a>
