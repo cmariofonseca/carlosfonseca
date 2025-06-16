@@ -108,9 +108,14 @@ export default function Projects() {
       <p className="text-2xl mt-16">Experiencia laboral</p>
 
       {/* Skills */}
-      <button className="text-gray-400 cursor-pointer mt-8" onClick={handleChangeFilterType}>
-        Filtrar por: <b>{filterType}</b>
-      </button>
+      <div className="w-full justify-center">
+        <button
+          className="text-sm text-gray-400 border border-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer mt-8"
+          onClick={handleChangeFilterType}
+        >
+          Filtrar por: <b>{filterType}</b>
+        </button>
+      </div>
 
       <div className="flex justify-center flex-wrap gap-4 mt-6">
         {(() => {

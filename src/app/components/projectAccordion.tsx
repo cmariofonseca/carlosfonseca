@@ -11,9 +11,7 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
   const [showModal, setShowModal] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const cardBorderColor = project.isPersonalProject
-    ? "border-[#f7df1e]"
-    : "border-gray-200 dark:border-gray-700";
+  const cardBorderColor = project.isPersonalProject ? "border-[#f7df1e]" : "border-gray-700";
 
   const handleCardClick = () => setShowModal(true);
 
@@ -34,8 +32,7 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
         onMouseLeave={() => setIsHovered(false)}
         className={`
           w-96 
-          bg-white 
-          dark:bg-gray-800 
+          bg-gray-800 
           border 
           rounded-lg 
           shadow-md 

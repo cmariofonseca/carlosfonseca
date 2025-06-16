@@ -1,22 +1,9 @@
 @import "tailwindcss";
 
+/* Tema oscuro fijo */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
@@ -26,11 +13,12 @@ body {
   margin: 0;
 }
 
+/* Scrollbar estilizado */
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #1a1a1a;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
@@ -40,7 +28,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #e0c717;
 }
+
+/* Scrollbar para Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #f7df1e #f1f1f1;
+  scrollbar-color: #f7df1e #1a1a1a;
 }
