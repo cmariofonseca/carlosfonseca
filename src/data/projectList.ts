@@ -57,7 +57,7 @@ export const projectList: Project[] = [
     industry: "Seguros",
     isPersonalProject: false,
     projectName: "Norma de carácter general (NCG311)",
-    technologies: "Angular",
+    technologies: "Angular, Nest",
     tools: "Git, Bitbucket, Jira",
     webSite: "https://www.sura.cl",
   },
