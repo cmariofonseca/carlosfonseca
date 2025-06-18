@@ -190,14 +190,14 @@ export const projectList: Project[] = [
       "aplicación para dispositivos móviles que permite realizar consultas, transferencias, pagos y recargas de forma rápida, segura y desde cualquier lugar.",
     developmentCompany: "Acenture | Colombia",
     id: "accenture-bancolombia-2",
-    imageUrl: "/projects/banistmo-movil.png",
+    imageUrl: "/projects/banistmo-app-personas.png",
     industry: "Bancario",
     isPersonalProject: false,
-    projectName: "Banistmo (app movil)",
+    projectName: "Banistmo app personas",
     technologies: "Ionic, Node, Serverless",
     tools: "DynamoDB, Cognito, S3 bucket, Git, Azure DevOps",
     webSite:
-      "https://play.google.com/store/apps/details?id=com.banistmo.transaccional.personas&hl=es_PE",
+      "https://play.google.com/store/apps/details?id=com.banistmo.transaccional.personas&hl=es_PA",
   },
   {
     client: "Postobon",
