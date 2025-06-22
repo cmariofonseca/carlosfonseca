@@ -3,6 +3,8 @@ export interface Project {
   date: string;
   description: string;
   developmentCompany: string;
+  developmentCompanyLinkedIn?: string;
+  developmentCompanyWebsite?: string;
   id: string;
   imageUrl: string;
   industry: string;

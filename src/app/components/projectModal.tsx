@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { Link, X } from "lucide-react";
 
 import { Project } from "@/interfaces/project";
 
@@ -40,16 +40,44 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             <span className="font-semibold text-white">Nombre:</span> {project.projectName}
           </div>
           {project.client && (
-            <div className="text-gray-400">
-              <span className="font-semibold text-white">Cliente:</span> {project.client}
+            <div className="w-full flex items-center">
+              <div className="text-gray-400 mr-4">
+                <span className="font-semibold text-white">Cliente:</span> {project.client}
+              </div>
+              <a
+                href={project.developmentCompanyLinkedIn}
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+                className="mr-4"
+              >
+                <Image
+                  alt="LinkedIn"
+                  className="cursor-pointer"
+                  src="/icons/linkedin.svg"
+                  width={18}
+                  height={18}
+                />
+              </a>
+              <a
+                href={project.developmentCompanyWebsite}
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <Link className="cursor-pointer text-white" size={18} />
+              </a>
             </div>
           )}
           <div className="text-gray-400">
             <span className="font-semibold text-white">Industria:</span> {project.industry}
           </div>
-          <div className="text-gray-400">
-            <span className="font-semibold text-white">Compañía:</span> {project.developmentCompany}
-          </div>
+          {project.developmentCompany && (
+            <div className="text-gray-400">
+              <span className="font-semibold text-white">Compañía:</span>{" "}
+              {project.developmentCompany}
+            </div>
+          )}
           <div className="text-gray-400">
             <span className="font-semibold text-white">Año de desarrollo:</span> {project.date}
           </div>
