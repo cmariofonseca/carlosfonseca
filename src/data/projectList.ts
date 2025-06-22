@@ -7,6 +7,8 @@ export const projectList: Project[] = [
     description:
       "Plataforma que permite a los ejecutivos iniciar de forma remota el traslado de fondos sin necesidad de estar conectado en tiempo real con el cliente. Una vez iniciado, el proceso continúa de manera asincrónica mediante notificaciones por correo electrónico.",
     developmentCompany: "CleverIt | Chile",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/cleverit-group",
+    developmentCompanyWebsite: "https://www.cleveritgroup.com",
     id: "cleverit-sura-4",
     imageUrl: "/projects/vro-cliente.png",
     industry: "Seguros",
@@ -22,6 +24,8 @@ export const projectList: Project[] = [
     description:
       "AFP Capital Pass es la nueva herramienta de AFP Capital que permite autorizar transacciones desde un dispositivo móvil. Esta app viene a robustecer la seguridad de los movimientos que desees realizar como Cambio de Fondos, Giros, actualización de antecedentes, entre otras transacciones.",
     developmentCompany: "CleverIt | Chile",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/cleverit-group",
+    developmentCompanyWebsite: "https://www.cleveritgroup.com",
     id: "cleverit-sura-1",
     imageUrl: "/projects/afp-capital-pass.png",
     industry: "Seguros",
@@ -37,6 +41,8 @@ export const projectList: Project[] = [
     description:
       "Módulo enfocado en identificar el perfil de riesgo del cliente mediante un cuestionario estructurado. Este perfil permite orientar al usuario hacia productos y estrategias de inversión adecuadas a su situación financiera y tolerancia al riesgo.",
     developmentCompany: "CleverIt | Chile",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/cleverit-group",
+    developmentCompanyWebsite: "https://www.cleveritgroup.com",
     id: "cleverit-sura-2",
     imageUrl: "/projects/afpcapital.png",
     industry: "Seguros",
@@ -52,6 +58,8 @@ export const projectList: Project[] = [
     description:
       "Proyecto desarrollado para dar cumplimiento a la Norma de Carácter General N° 311 de la Superintendencia de Valores y Seguros (SVS) de Chile, relacionada con la transparencia, adecuada administración y gestión de riesgos en los fondos de pensiones y seguros.",
     developmentCompany: "CleverIt | Chile",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/cleverit-group",
+    developmentCompanyWebsite: "https://www.cleveritgroup.com",
     id: "cleverit-sura-3",
     imageUrl: "/projects/sura-chile-web.png",
     industry: "Seguros",
@@ -67,6 +75,8 @@ export const projectList: Project[] = [
     description:
       "Somos una empresa valenciana, líder en España, en la distribución de flor cortada, verdes, plantas y complementos para floristas. Nuestro departamento de logística y reparto nos permite ofrecer un servicio integral de calidad.",
     developmentCompany: "Mindshore | España",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/mindshore",
+    developmentCompanyWebsite: "https://mindshore.io",
     id: "mindshore-verdnatura-1",
     imageUrl: "/projects/lilium.png",
     industry: "Agricultura y jardinería (rama ornamental).",
@@ -77,11 +87,13 @@ export const projectList: Project[] = [
     webSite: "https://verdnatura.es",
   },
   {
-    client: "Innocv",
+    client: "INNOCV Solutions",
     date: "2023",
     description:
       "Empresa especializada en la gestión integral de artistas y proyectos musicales , ofreciendo servicios de asesoría legal, fiscal, gestión de derechos y estrategias de marketing digital. Su enfoque está centrado en ayudar a profesionales del sector musical a desarrollar su carrera con un soporte administrativo y creativo completo.",
     developmentCompany: "Mindshore | España",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/mindshore",
+    developmentCompanyWebsite: "https://mindshore.io",
     id: "mindshore-innocv-1",
     imageUrl: "/projects/gestmusic.png",
     industry: "Entretenimiento y musical",
@@ -97,6 +109,8 @@ export const projectList: Project[] = [
     description:
       "Migración al sistema core Ítaca, una solución modular y escalable para gestionar todo el ciclo del negocio de seguros —desde la cotización hasta la liquidación—, mejorando la eficiencia operativa y reduciendo errores, con una arquitectura flexible adaptable a distintos productos y regulaciones.",
     developmentCompany: "Hublance | España",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/hublance",
+    developmentCompanyWebsite: "https://www.hublance.com",
     id: "hublance-rivadavia-1",
     imageUrl: "/projects/itaca.png",
     industry: "Seguros",
@@ -113,6 +127,8 @@ export const projectList: Project[] = [
     description:
       "Plataforma de Business Intelligence enfocada en ayudar a entidades financieras con insights, dashboards y decisiones en tiempo real.",
     developmentCompany: "N5 now | Argentina",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/n5now",
+    developmentCompanyWebsite: "https://n5now.com",
     id: "n5now-n5now-1",
     imageUrl: "/projects/decision-engine-ui-analytics.png",
     industry: "Bancario",
@@ -128,6 +144,8 @@ export const projectList: Project[] = [
     description:
       "Proyecto enfocado en la actualización tecnológica de una plataforma existente, migrando el código base desde Angular 7 a Angular 10. La migración se ejecutó de forma exitosa garantizando la estabilidad del sistema y permitiendo la integración de nuevas funcionalidades. Posteriormente, se incorporó soporte para dispositivos externos como lectores de huellas digitales, así como el desarrollo de nuevos módulos funcionales conforme a los requerimientos del negocio.",
     developmentCompany: "Personal soft | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/personalsoft",
+    developmentCompanyWebsite: "https://www.personalsoft.com",
     id: "personal-soft-medicarte-1",
     imageUrl: "/projects/atencion-domiciliaria.png",
     industry: "Salud",
@@ -143,6 +161,8 @@ export const projectList: Project[] = [
     description:
       "Herramienta que permiten calcular el precio de un seguro, ajustando los detalles del producto a la situación particular de quien lo solicita de una forma rapida y sencilla.",
     developmentCompany: "Personal soft | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/personalsoft",
+    developmentCompanyWebsite: "https://www.personalsoft.com",
     id: "personal-soft-suramericana-1",
     imageUrl: "/projects/cotizadores.png",
     industry: "Seguros",
@@ -159,6 +179,8 @@ export const projectList: Project[] = [
     description:
       "Plataforma donde los usuarios pueden reservar vuelos, gestionar itinerarios, hacer check-in en línea, consultar el estado de los vuelos, y acceder a servicios como selección de asientos, compra de equipaje adicional y acumulación de millas LifeMiles.",
     developmentCompany: "Accenture | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/accenture-colombia",
+    developmentCompanyWebsite: "https://www.accenture.com/co-es",
     id: "accenture-avianca-1",
     imageUrl: "/projects/avianca.png",
     industry: "Aerolineas",
@@ -174,11 +196,13 @@ export const projectList: Project[] = [
     description:
       "Plataforma en línea que ofrece información sobre productos financieros y servicios bancarios, permitiendo el acceso seguro a cuentas y operaciones desde cualquier dispositivo con internet.",
     developmentCompany: "Acenture | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/accenture-colombia",
+    developmentCompanyWebsite: "https://www.accenture.com/co-es",
     id: "accenture-bancolombia-1",
     imageUrl: "/projects/banistmo-web.png",
     industry: "Bancario",
     isPersonalProject: false,
-    projectName: "Banistmo",
+    projectName: "Banistmo web",
     technologies: "Angular, Node, Serverless",
     tools: "DynamoDB, Cognito, S3 bucket, Git, Azure DevOps",
     webSite: "https://www.banistmo.com",
@@ -189,6 +213,8 @@ export const projectList: Project[] = [
     description:
       "aplicación para dispositivos móviles que permite realizar consultas, transferencias, pagos y recargas de forma rápida, segura y desde cualquier lugar.",
     developmentCompany: "Acenture | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/accenture-colombia",
+    developmentCompanyWebsite: "https://www.accenture.com/co-es",
     id: "accenture-bancolombia-2",
     imageUrl: "/projects/banistmo-app-personas.png",
     industry: "Bancario",
@@ -205,6 +231,8 @@ export const projectList: Project[] = [
     description:
       "Atención y pedidos digital de Postobón, una “mano amiga” al servicio de sus consumidores en ciudades principales de Colombia, como Bogotá, Medellín y Cali a través de canales como WhatsApp y línea telefónica, Rosita permite a usuarios y negocios realizar pedidos de bebidas, snacks y otros productos de la compañía, con entregas a domicilio.",
     developmentCompany: "Accenture | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/accenture-colombia",
+    developmentCompanyWebsite: "https://www.accenture.com/co-es",
     id: "accenture-postobon-1",
     imageUrl: "/projects/rosita.png",
     industry: "Bebidas gaseosas",
@@ -220,6 +248,8 @@ export const projectList: Project[] = [
     description:
       "Plataforma digital tipo marketplace especializada en el sector de la construcción, que conecta a proveedores con compradores profesionales, permitiendo la gestión eficiente de materiales, objetos BIM y servicios asociados. Su enfoque modular y orientado al abastecimiento estratégico ha optimizado costos y tiempos en proyectos de gran escala en Colombia.",
     developmentCompany: "Julius Connected 2 Grow | Colombia",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/julius2grow",
+    developmentCompanyWebsite: "https://www.julius2grow.com",
     id: "julius-connected-2-grow-conconcreto-1",
     imageUrl: "/projects/bimbau.png",
     industry: "Construcción",
@@ -235,6 +265,8 @@ export const projectList: Project[] = [
     description:
       "Plataforma de telemetría para el monitoreo remoto de variables físicas (como temperatura, presión, humedad) en entornos críticos de salud e industriales. La solución permite listar dispositivos asociados, generar alertas (vía email o SMS) ante condiciones fuera de rango, y visualizar datos en tiempo real a través de la plataforma Octa Cloud, facilitando control y seguridad desde cualquier lugar.",
     developmentCompany: "Tres Astronautas",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/tresastronautas",
+    developmentCompanyWebsite: "https://www.tresastronautas.com",
     id: "tres-astronautas-pimedica-1",
     imageUrl: "/projects/pimedica-iot.png",
     industry: "Salud",
@@ -250,6 +282,8 @@ export const projectList: Project[] = [
     description:
       "Desarrollo de una integración con la herramienta MIPRES del Ministerio de Salud (SISPRO) para permitir a Medicarte consumir en línea las prescripciones de tecnologías en salud no incluidas en el Plan de Beneficios UPC. Esto favorece la generación automatizada de reportes RIPS y MIPRES, optimizando el flujo administrativo y agilizando la atención a pacientes. La solución mejora la interoperabilidad con entidades como EPS e IPS, reduce errores manuales y garantiza el cumplimiento normativo.",
     developmentCompany: "Tres Astronautas",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/tresastronautas",
+    developmentCompanyWebsite: "https://www.tresastronautas.com",
     id: "tres-astronautas-medicarte-1",
     imageUrl: "/projects/mipres-en-linea.png",
     industry: "Salud",
@@ -265,6 +299,8 @@ export const projectList: Project[] = [
     description:
       "Agencia colombiana de turismo extremo que ofrece experiencias llenas de adrenalina como rafting, rappel, canopy y deportes outdoor lideradas por un equipo de apasionados aventureros.",
     developmentCompany: "Tres Astronautas",
+    developmentCompanyLinkedIn: "https://www.linkedin.com/company/tresastronautas",
+    developmentCompanyWebsite: "https://www.tresastronautas.com",
     id: "tres-astronautas-kwali-1",
     imageUrl: "/projects/kwaliadventure.png",
     industry: "Turismo",
@@ -279,7 +315,9 @@ export const projectList: Project[] = [
     date: "2025",
     description:
       "Aplicación web móvil-first para crear y almacenar tarjetas de vocabulario personalizadas en inglés y español. Pensada para el aprendizaje de idiomas, integra carga de imágenes, pronunciación, definición, autenticación de usuarios y almacenamiento en la nube. Su diseño es intuitivo, responsivo y centrado en la experiencia del usuario.",
-    developmentCompany: "Proyecto personal",
+    developmentCompany: "",
+    developmentCompanyLinkedIn: "",
+    developmentCompanyWebsite: "",
     id: "personal-3",
     imageUrl: "/projects/lexloop.png",
     industry: "Educación",
@@ -294,7 +332,9 @@ export const projectList: Project[] = [
     date: "2024",
     description:
       "Emprendimiento rural enfocado en ofrecer servicios de paisajismo y jardinería que buscan mantenimiento de jardines, podas, limpieza de áreas verdes y otros servicios relacionados con el cuidado del entorno natural.",
-    developmentCompany: "Proyecto personal",
+    developmentCompany: "",
+    developmentCompanyLinkedIn: "",
+    developmentCompanyWebsite: "",
     id: "personal-2",
     imageUrl: "/projects/momoto.png",
     industry: "Paisajismo",
@@ -309,7 +349,9 @@ export const projectList: Project[] = [
     date: "2023",
     description:
       "Sistema POS que permite gestionar la toma, preparación y entrega de los pedidos llevando un registro en tiempo real de estos eventos y mostrando métricas que permiten la toma de decisiones. Ideal para restaurantes, bares, negocios de comidas rápidas, cafés y en general todos los establecimientos de alimentos y bebidas.",
-    developmentCompany: "Proyecto personal",
+    developmentCompany: "",
+    developmentCompanyLinkedIn: "",
+    developmentCompanyWebsite: "",
     id: "personal-1",
     imageUrl: "/projects/alybe.png",
     industry: "Alimentos y bebidas",
