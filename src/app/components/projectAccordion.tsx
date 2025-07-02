@@ -38,10 +38,9 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
           shadow-md 
           transition 
           duration-300 
-          hover:shadow-lg 
           cursor-pointer 
           ${cardBorderColor}
-          ${isHovered ? "opacity-100" : "opacity-70"}
+          ${isHovered ? "opacity-100 shadow-lg scale-105" : "opacity-70"}
         `}
       >
         <div className="w-96 flex justify-center items-center overflow-hidden">
