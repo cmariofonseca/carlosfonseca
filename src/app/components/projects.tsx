@@ -88,7 +88,7 @@ export default function Projects() {
       mx-1
       transition-transform 
       duration-200 
-      hover:scale-120 
+      hover:scale-125 
       ${!isActive ? "grayscale opacity-50" : ""}
     `;
   };

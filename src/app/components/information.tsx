@@ -32,7 +32,7 @@ export default function Information() {
           target="_blank"
           title="GitHub"
         >
-          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 hover:text-white transition cursor-pointer">
             <Image
               alt="GitHub"
               className="cursor-pointer mr-1 sm:mr-2"
@@ -50,7 +50,7 @@ export default function Information() {
           target="_blank"
           title="LinkedIn"
         >
-          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 hover:text-white transition cursor-pointer">
             <Image
               alt="LinkedIn"
               className="cursor-pointer mr-1 sm:mr-2"
@@ -63,7 +63,7 @@ export default function Information() {
         </a>
 
         <a href="/cv" rel="noopener noreferrer" target="_blank" title="CV">
-          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 transition cursor-pointer">
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 hover:text-white transition cursor-pointer">
             <CloudDownload className="text-[#f7df1e] mr-1 sm:mr-2" /> Descargar CV
           </button>
         </a>
