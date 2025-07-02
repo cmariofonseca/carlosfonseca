@@ -106,7 +106,7 @@ export default function Projects() {
 
   return (
     <div className="w-full">
-      <p className="text-2xl mt-16">Experiencia laboral</p>
+      <p className="text-2xl mt-12">Experiencia laboral</p>
 
       {/* Skills */}
       <div className="w-full flex justify-center">

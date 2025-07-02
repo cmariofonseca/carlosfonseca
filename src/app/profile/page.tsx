@@ -4,7 +4,7 @@ import Projects from "../components/projects";
 
 export default function ProfilePage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center pt-4 px-4 pb-8 text-center">
       <Information />
 
       <AboutMe />
