@@ -5,13 +5,13 @@ export default function Information() {
   return (
     <div className="w-full flex flex-col items-center text-center">
       {/* Imagen de perfil circular */}
-      <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-6">
+      <div className="w-52 h-w-52 rounded-full overflow-hidden shadow-lg mb-6">
         <Image
           alt="Foto de perfil"
           className="w-full h-full object-cover"
-          src="/images/image_profile.jpg"
-          width={160}
-          height={160}
+          src="/images/image_profile_2.png"
+          width={200}
+          height={200}
         />
       </div>
 
