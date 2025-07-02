@@ -16,16 +16,16 @@ export default function Information() {
       </div>
 
       {/* Nombre */}
-      <h1 className="text-4xl text-[#f7df1e] font-bold">Carlos Fonseca</h1>
+      <h1 className="text-4xl text-[#f7df1e] font-bold mb-2">Carlos Fonseca</h1>
 
       {/* Descripción */}
-      <p className="text-lg text-gray-400 max-w-md mt-2">
+      <p className="text-lg text-gray-400 max-w-md mb-8">
         Desarrollador web especializado en frontend, con experiencia en backend y aplicaciones
         móviles.
       </p>
 
       {/* Iconos de redes y botón de CV */}
-      <div className="flex items-center gap-2 sm:gap-4 mt-8">
+      <div className="flex items-center gap-2 sm:gap-4">
         <a
           href="https://github.com/cmariofonseca"
           rel="noopener noreferrer"
