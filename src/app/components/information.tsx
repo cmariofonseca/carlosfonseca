@@ -3,15 +3,16 @@ import { CloudDownload } from "lucide-react";
 
 export default function Information() {
   return (
-    <div className="w-full flex flex-col items-center text-center">
-      {/* Imagen de perfil circular */}
-      <div className="w-52 h-w-52 rounded-full overflow-hidden shadow-lg mb-6">
+    <div className="w-full flex flex-col items-center text-center mt-2">
+      {/* Imagen de perfil */}
+      <div className="w-52 overflow-hidden mb-6">
         <Image
-          alt="Foto de perfil"
-          className="w-full h-full object-cover"
           src="/images/image_profile_2.png"
+          alt="Foto de perfil"
           width={200}
           height={200}
+          className="w-auto h-auto"
+          priority
         />
       </div>
 
