@@ -43,13 +43,13 @@ export default function ProjectAccordion({ project }: { readonly project: Projec
           ${isHovered ? "opacity-100 shadow-lg scale-105" : "opacity-70"}
         `}
       >
-        <div className="w-96 flex justify-center items-center overflow-hidden">
+        <div className="w-96 h-[207px] relative flex justify-center items-center overflow-hidden">
           <Image
             src={project.imageUrl}
             alt={project.projectName}
-            className="h-[207px] w-auto object-contain rounded-lg"
-            width={384}
-            height={207}
+            fill
+            sizes="384px"
+            className="object-contain rounded-lg"
           />
         </div>
 
