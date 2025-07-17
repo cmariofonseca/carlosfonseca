@@ -28,24 +28,6 @@ export default function Information() {
       {/* Iconos de redes y botón de CV */}
       <div className="flex items-center gap-2 sm:gap-4">
         <a
-          href="https://github.com/cmariofonseca"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="GitHub"
-        >
-          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 hover:text-white transition cursor-pointer">
-            <Image
-              alt="GitHub"
-              className="cursor-pointer mr-1 sm:mr-2"
-              src="/icons/github.svg"
-              width={24}
-              height={24}
-            />
-            GitHub
-          </button>
-        </a>
-
-        <a
           href="https://www.linkedin.com/in/carlosfonsecadev/"
           rel="noopener noreferrer"
           target="_blank"
@@ -60,6 +42,24 @@ export default function Information() {
               height={24}
             />
             LinkedIn
+          </button>
+        </a>
+
+        <a
+          href="https://github.com/cmariofonseca"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="GitHub"
+        >
+          <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 hover:text-white transition cursor-pointer">
+            <Image
+              alt="GitHub"
+              className="cursor-pointer mr-1 sm:mr-2"
+              src="/icons/github.svg"
+              width={24}
+              height={24}
+            />
+            GitHub
           </button>
         </a>
 
