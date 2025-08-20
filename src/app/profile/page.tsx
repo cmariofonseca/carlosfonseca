@@ -1,6 +1,6 @@
-import AboutMe from "../components/aboutMe";
-import Information from "../components/information";
-import Projects from "../components/projects";
+import Information from "../components/layout/Information";
+import AboutMe from "../components/layout/AboutMe";
+import Projects from "../components/layout/Projects";
 
 export default function ProfilePage() {
   return (
