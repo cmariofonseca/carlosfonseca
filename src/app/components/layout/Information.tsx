@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { CloudDownload } from "lucide-react";
 
+import { COLORS } from "@/constants/colors";
+
 export default function Information() {
   return (
     <div className="w-full flex flex-col items-center text-center mt-2">
@@ -17,10 +19,12 @@ export default function Information() {
       </div>
 
       {/* Nombre */}
-      <h1 className="text-4xl text-[#f7df1e] font-bold mb-2">Carlos Fonseca</h1>
+      <h1 className="text-4xl font-bold mb-4" style={{ color: COLORS.highlight }}>
+        Carlos Fonseca
+      </h1>
 
       {/* Descripción */}
-      <p className="text-lg text-gray-400 max-w-md mb-8">
+      <p className="text-lg text-gray-400 max-w-md mb-4">
         Desarrollador web especializado en frontend, con experiencia en backend y aplicaciones
         móviles.
       </p>
@@ -65,7 +69,8 @@ export default function Information() {
 
         <a href="/cv" rel="noopener noreferrer" target="_blank" title="CV">
           <button className="flex items-center text-sm text-gray-400 border border-gray-500 px-2 sm:px-3 py-1 rounded hover:bg-gray-800 hover:text-white transition cursor-pointer">
-            <CloudDownload className="text-[#f7df1e] mr-1 sm:mr-2" /> Descargar CV
+            <CloudDownload className="mr-1 sm:mr-2" style={{ color: COLORS.highlight }} /> Descargar
+            CV
           </button>
         </a>
       </div>

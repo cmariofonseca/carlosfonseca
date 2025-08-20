@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { doc, getDoc, setDoc, updateDoc, increment } from "firebase/firestore";
+
 import { db } from "@/app/libs/firebase";
 
 export default function Footer() {
