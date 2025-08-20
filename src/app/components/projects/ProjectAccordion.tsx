@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import ProjectModal from "./projectModal";
+import ProjectModal from "./ProjectModal";
 
 import { Project } from "@/interfaces/project";
 

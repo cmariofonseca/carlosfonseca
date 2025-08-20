@@ -1,4 +1,5 @@
-import Footer from "./components/footer";
+import ChatButton from "./components/chat/ChatButton";
+import Footer from "./components/layout/Footer";
 
 import "./globals.css";
 
@@ -11,6 +12,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div>{children}</div>
+
+        <ChatButton />
 
         <Footer />
       </body>
