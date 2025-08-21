@@ -38,7 +38,7 @@ export default function ChatButton() {
 
       {/* Modal */}
       <ChatModal open={open} onClose={() => setOpen(false)}>
-        {/* Header estilo WhatsApp-like */}
+        {/* Header estilo WhatsApp */}
         <div
           className="h-12 px-4 flex items-center justify-between text-white"
           style={{ backgroundColor: COLORS.chatHeader }}
@@ -55,11 +55,11 @@ export default function ChatButton() {
             aria-label="Cerrar chat"
             title="Cerrar"
           >
-            ✕
+            X
           </button>
         </div>
 
-        {/* Cuerpo del chat: tu componente actual tal cual */}
+        {/* Cuerpo del chat */}
         <div className="h-[calc(100%-3rem)]">
           <ChatInterface />
         </div>
