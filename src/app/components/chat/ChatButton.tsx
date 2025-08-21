@@ -51,11 +51,11 @@ export default function ChatButton() {
           </div>
           <button
             onClick={() => setOpen(false)}
-            className="text-white/80 hover:text-white focus:outline-none"
+            className="text-white/80 font-bold hover:text-white focus:outline-none"
             aria-label="Cerrar chat"
             title="Cerrar"
           >
-            X
+            x
           </button>
         </div>
 
