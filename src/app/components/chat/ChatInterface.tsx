@@ -105,7 +105,7 @@ export default function ChatInterface() {
 
       {/* Input Area */}
       <div className="p-4 border-t border-gray-200 bg-white rounded-b-lg">
-        <div className="flex space-x-2">
+        <div className="flex items-center space-x-2">
           <input
             type="text"
             value={input}
@@ -118,7 +118,8 @@ export default function ChatInterface() {
           <button
             onClick={handleSend}
             disabled={isLoading || !input.trim()}
-            className="px-6 py-2 bg-[#128C7E] text-white rounded-lg hover:bg-[#0C6E63] focus:outline-none focus:ring-2 focus:ring-[#25D366] disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+            className="shrink-0 min-w-[80px] px-4 py-2 text-white rounded-lg hover:bg-[#0C6E63] focus:outline-none focus:ring-2 focus:ring-[#25D366] disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors whitespace-nowrap"
+            style={{ backgroundColor: COLORS.chatButton }}
           >
             {isLoading ? (
               <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>

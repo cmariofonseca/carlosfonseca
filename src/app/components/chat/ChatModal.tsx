@@ -26,24 +26,13 @@ export default function ChatModal({ open, onClose, children }: Props) {
   }, [open, onClose]);
 
   return (
-    <>
-      <button
-        type="button"
-        aria-label="Cerrar chat"
-        onClick={onClose}
-        className={`fixed inset-0 z-[8] bg-black/40 backdrop-blur-[1px] ${
-          open ? "block" : "hidden"
-        }`}
-      />
-
-      <dialog
-        open={open}
-        className={`fixed right-1 bottom-10 z-[9] m-0 p-0 w-[min(420px,92vw)] h-[70vh] md:h-[75vh] bg-neutral-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden inset-auto left-auto top-auto transform transition-all duration-200 !translate-x-0 ${
-          open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3 pointer-events-none"
-        }`}
-      >
-        {children}
-      </dialog>
-    </>
+    <dialog
+      open={open}
+      className={`fixed right-1 bottom-10 z-[9] m-0 p-0 w-[min(420px,92vw)] h-[70vh] md:h-[75vh] bg-neutral-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden inset-auto left-auto top-auto transform transition-all duration-200 !translate-x-0 ${
+        open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3 pointer-events-none"
+      }`}
+    >
+      {children}
+    </dialog>
   );
 }
